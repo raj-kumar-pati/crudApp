@@ -1,0 +1,23 @@
+<%- include('./base/header.ejs') %>
+
+<div class="container">
+    <div class="alert bg-success mt-3">
+        <h4 class="text-center">upolad your profile pic</h4>
+    </div>
+</div>
+
+
+<div class="container">
+
+<form action="/upolads"enctype="multipart/form-data" method="POST"> 
+		<span>Upload Profile Picture:</span> 
+		<div class="mb-3">
+			<label for="formFile" class="form-label">upolad</label>
+			<input class="form-control" type="file" name="mypic" id="formFile">
+		  </div>
+		  <input type="submit" value="Upload Profile pic" class="btn btn-warning w-100">
+		
+</form> 
+</div>
+
+	<%- include ('./base/footer.ejs') %>	

@@ -1,0 +1,50 @@
+<%- include('./base/header.ejs') %>
+
+<div class="container">
+    <div class="alert bg-success mt-3">
+        <h4 class="text-center">registor youself</h4>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col">
+            <form action="/registor" method="POST">
+                <p class="btn-warning"><%= locals.message  %></p>
+                <div class="field my-3">
+                    <label for="" class="form-label">Name</label>
+                    <input type="text" class="form-control" name="name"   placeholder="Enter your name">
+                </div>
+
+                <div class="field my-3">
+                    <label for="" class="form-label">sirname</label>
+                    <input type="text" class="form-control" name="sirname"  placeholder="Enter sirname">
+                </div>
+
+                <div class="field my-3">
+                    <label for="" class="form-label">email</label>
+                    <input type="text" class="form-control" name="email" placeholder="Enter your email">
+                </div>
+
+                <div class="field my-3">
+                    <label for="" class="form-label">password</label>
+                    <input type="password" class="form-control" name="password"  placeholder="Enter password">
+                </div>
+                
+
+                <input type="submit" value="registor youself" class="btn btn-warning w-100">
+                
+            </form>
+
+            <form action="/auth" method="get">
+                <input type="submit" value="login with google" class="btn btn-danger w-100 my-3">
+            </form>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
+
+
+<%- include ('./base/footer.ejs') %>
